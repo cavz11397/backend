@@ -1,4 +1,4 @@
-package co.com.sofka.questions;
+package co.com.sofka.questions.mappers;
 
 import co.com.sofka.questions.collections.Answer;
 import co.com.sofka.questions.collections.Question;

@@ -1,6 +1,6 @@
-package co.com.sofka.questions.usecases;
+package co.com.sofka.questions.usecases.question;
 
-import co.com.sofka.questions.MapperUtils;
+import co.com.sofka.questions.mappers.MapperUtils;
 import co.com.sofka.questions.collections.Question;
 import co.com.sofka.questions.model.QuestionDTO;
 import co.com.sofka.questions.reposioties.QuestionRepository;
@@ -11,11 +11,11 @@ import reactor.core.publisher.Mono;
 
 @Service
 @Validated
-public class CreateUseCase implements SaveQuestion {
+public class CreateQuestionUseCase implements SaveQuestion {
     private final QuestionRepository questionRepository;
     private final MapperUtils mapperUtils;
 
-    public CreateUseCase(MapperUtils mapperUtils, QuestionRepository questionRepository) {
+    public CreateQuestionUseCase(MapperUtils mapperUtils, QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
         this.mapperUtils = mapperUtils;
     }
